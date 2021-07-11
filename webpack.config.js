@@ -5,7 +5,7 @@ var webpack = require('webpack');
 var path = require('path');
 
 module.exports = {
-    mode: "development",
+    mode: production ? "production":"development",
     context: path.join(__dirname, "src"),
     entry: "./js/client.js",
     module: {
